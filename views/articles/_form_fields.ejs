@@ -1,0 +1,21 @@
+<div class="form-container mb-4 p-4">
+    <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="markdown" class="form-label">Markdown</label>
+        <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+        <a href="/" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</div>
