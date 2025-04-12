@@ -29,7 +29,7 @@ class QuizGenerator {
     }
 
     async generateQuiz(language, difficulty, numQuestions) {
-        const apiKey = "AIzaSyCvRIi7ryAQZPMO9xmjbuGJRM7q0KA4RGA";
+        const apiKey = "";
         const model = "gemini-1.5-flash";
         const prompt = `Generate ${numQuestions} ${difficulty} multiple-choice questions for ${language}. Each question should have 4 options and indicate the correct answer. Return in JSON format like: [{"question": "text", "options": ["opt1", "opt2", "opt3", "opt4"], "correctAnswer": "opt1"}]`;
 
